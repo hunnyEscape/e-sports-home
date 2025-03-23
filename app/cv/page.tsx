@@ -22,7 +22,7 @@ export default function CVPage() {
 
 			<HopeSection />
 
-			<ResultsSection />
+			<ResultsSection/>
 
 			<CVTestimonialsSection />
 

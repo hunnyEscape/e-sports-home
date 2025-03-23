@@ -2,13 +2,21 @@
 import Image from 'next/image';
 
 export default function HopeSection() {
+	const imageSrc = "/CVHeroSection.png";
+	const imageAlt = "シニアの方々がゲームを楽しむ様子";
 	return (
 		<section className="py-16 bg-gradient-to-br from-background to-white">
 			<div className="container mx-auto px-4 max-w-4xl">
 				<div className="text-center mb-12">
+					{/*
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-						ある日、試してみた<span className="text-primary">"脳トレゲーム"</span>。<br />
+						ある日、試してみた<span className="text-primary">"eスポーツ"</span>。<br />
 						そこから毎日が変わった。
+					</h2>
+					*/}
+					<h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+						ある日、試してみた<span className="text-primary">"eスポーツ"</span>。<br />
+						そこから毎日が変わる。
 					</h2>
 				</div>
 
@@ -16,17 +24,26 @@ export default function HopeSection() {
 					<div className="md:w-1/2 mb-8 md:mb-0">
 						<div className="bg-white rounded-xl overflow-hidden shadow-lg">
 							{/* 仮の画像プレースホルダー */}
-							<div className="aspect-w-16 aspect-h-9 bg-gray-200">
-								<div className="flex items-center justify-center h-full text-gray-400">
-									笑顔でゲームを楽しむシニアの方々の画像
-								</div>
+							<div className="aspect-w-1 aspect-h-1 bg-gray-200">
+								<Image
+									src={imageSrc}
+									alt={imageAlt}
+									fill
+									style={{ objectFit: 'cover' }}
+									sizes="(max-width: 768px) 100vw, 50vw"
+								/>
 							</div>
 						</div>
 					</div>
 
 					<div className="md:w-1/2">
+						{/*
 						<h3 className="text-2xl font-bold text-gray-800 mb-4">
 							ただ遊ぶだけなのに、なんだか元気になってる
+						</h3>
+						*/}
+						<h3 className="text-2xl font-bold text-gray-800 mb-4">
+							遊ぶだけなのに、元気になる
 						</h3>
 
 						<div className="space-y-4">

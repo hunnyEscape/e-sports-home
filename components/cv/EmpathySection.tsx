@@ -31,7 +31,7 @@ export default function EmpathySection() {
 								</svg>
 							</div>
 							<p className="ml-4 text-xl text-gray-700">
-								スマホやテレビばかり見て、1日が終わってしまう
+								一人でスマホやテレビばかり見て、1日が終わってしまう
 							</p>
 						</div>
 
@@ -80,13 +80,24 @@ export default function EmpathySection() {
 						</div>
 					</div>
 
-					<div className="mt-8 text-center">
+					{/*
+										<div className="mt-8 text-center">
 						<p className="text-2xl font-bold text-gray-800">
 							実はそう感じていたのは、あなただけではありません
 						</p>
 						<p className="mt-4 text-xl text-gray-700">
 							私たちの体験スペースに来られる方の多くが、はじめは『ゲームなんて...』と戸惑っていました。
 							でも今では、『毎週ここに来るのが楽しみ』と笑顔で過ごされています。
+						</p>
+					</div>
+					*/}
+					<div className="mt-8 text-center">
+						<p className="text-2xl font-bold text-gray-800">
+							そう感じるのは、あなただけではありません
+						</p>
+						<p className="mt-4 text-xl text-gray-700">
+							来られる方の多くが、はじめは『ゲームなんて...』と、<br/>
+							でもそれが毎週の楽しみになります
 						</p>
 					</div>
 				</div>

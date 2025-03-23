@@ -2,6 +2,8 @@
 import Image from 'next/image';
 
 export default function ExperienceSection() {
+	const imageSrc = "/ExperienceSection.png";
+	const imageAlt = "シニアの方々がゲームを楽しむ様子";
 	return (
 		<section id="experience" className="py-16 bg-white">
 			<div className="container mx-auto px-4">
@@ -23,7 +25,7 @@ export default function ExperienceSection() {
 						</div>
 						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">シンプルなゲーム体験</h3>
 						<p className="text-lg text-gray-700">
-							2つのボタンだけの簡単操作。初めてでも笑顔になれるゲームをご用意しています。
+							簡単操作。初めてでも笑顔になれるゲームをご用意しています。
 						</p>
 					</div>
 
@@ -36,24 +38,20 @@ export default function ExperienceSection() {
 						</div>
 						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">スタッフのサポート</h3>
 						<p className="text-lg text-gray-700">
-							優しいスタッフが一人ひとりの進み具合に合わせてサポートします。
+							スタッフが一人ひとりの進み具合に合わせてサポートします。
 						</p>
 					</div>
-
-					{/* 体験項目3 */}
 					<div className="bg-background rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
 						<div className="flex justify-center mb-4">
 							<div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-bold">
 								3
 							</div>
 						</div>
-						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">お茶でリラックス</h3>
+						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">チーム戦</h3>
 						<p className="text-lg text-gray-700">
-							ホッと一息。お茶を飲みながらリラックスした雰囲気で楽しめます。
+							お一人参加でもご安心を。初対面でも協力ゲームでワイワイつながれます。
 						</p>
 					</div>
-
-					{/* 体験項目4 */}
 					<div className="bg-background rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
 						<div className="flex justify-center mb-4">
 							<div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl font-bold">
@@ -62,7 +60,7 @@ export default function ExperienceSection() {
 						</div>
 						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">交流タイム（希望者）</h3>
 						<p className="text-lg text-gray-700">
-							他の参加者との交流も楽しめます。もちろん、見学だけでもOKです。
+							ゲームを遊んだ仲間と情報を交換しましょう！見学だけでもOKです。
 						</p>
 					</div>
 				</div>
@@ -71,12 +69,21 @@ export default function ExperienceSection() {
 					<div className="bg-background-light rounded-xl p-8 md:p-12">
 						<div className="md:flex items-center">
 							<div className="md:w-1/2 md:pr-8">
-								<h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+								{/*	<h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
 									実際の体験会の様子
+								</h3> */}
+								<h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+									体験会の雰囲気
 								</h3>
+								{/*
 								<p className="text-lg text-gray-700 mb-6">
 									みなさん最初は「私にできるかな？」と不安そうですが、
 									すぐに笑顔になって楽しんでいます。年齢や経験は関係ありません。
+									一緒に新しい体験を楽しみましょう！
+								</p>*/}
+								<p className="text-lg text-gray-700 mb-6">
+									みなさん最初は「私にできるかな？」と不安かもしれませんが、
+									すぐに笑顔になって楽しめます！年齢や経験は関係ありません。
 									一緒に新しい体験を楽しみましょう！
 								</p>
 								<ul className="space-y-3 text-lg text-gray-700">
@@ -98,9 +105,13 @@ export default function ExperienceSection() {
 							<div className="mt-8 md:mt-0 md:w-1/2">
 								<div className="relative rounded-xl overflow-hidden shadow-lg">
 									<div className="aspect-w-16 aspect-h-9 bg-gray-200">
-										<div className="flex items-center justify-center h-full text-gray-400">
-											体験会の様子の画像がここに表示されます
-										</div>
+										<Image
+											src={imageSrc}
+											alt={imageAlt}
+											fill
+											style={{ objectFit: 'cover' }}
+											sizes="(max-width: 768px) 100vw, 50vw"
+										/>
 									</div>
 								</div>
 							</div>

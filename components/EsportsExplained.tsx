@@ -2,6 +2,8 @@
 import Image from 'next/image';
 
 export default function EsportsExplained() {
+	const imageSrc = "/EsportsExplained.png";
+	const imageAlt = "シニアの方々がゲームを楽しむ様子";
 	return (
 		<section id="esports" className="py-16 bg-gradient-to-br from-background to-white">
 			<div className="container mx-auto px-4">
@@ -17,9 +19,13 @@ export default function EsportsExplained() {
 					<div className="md:w-1/2">
 						<div className="bg-white rounded-xl overflow-hidden shadow-lg">
 							<div className="aspect-w-16 aspect-h-9 bg-gray-200">
-								<div className="flex items-center justify-center h-full text-gray-400">
-									シニアeスポーツの様子の画像がここに表示されます
-								</div>
+								<Image
+									src={imageSrc}
+									alt={imageAlt}
+									fill
+									style={{ objectFit: 'cover' }}
+									sizes="(max-width: 768px) 100vw, 50vw"
+								/>
 							</div>
 						</div>
 					</div>
@@ -31,7 +37,7 @@ export default function EsportsExplained() {
 							</h3>
 							<p className="text-lg text-gray-700 mb-6">
 								「eスポーツ」とは「エレクトロニック・スポーツ」の略で、デジタルゲームを使った娯楽・競技のことです。
-								シニア向けには特に<span className="font-bold">脳トレ効果</span>、<span className="font-bold">反射神経維持</span>、<span className="font-bold">社会的交流</span>を
+								シニア向けには特に<span className="font-bold">脳トレ効果</span>、<span className="font-bold">反射神経維持</span>、<span className="font-bold">交流</span>を
 								目的とした、簡単で楽しいゲームをご用意しています。
 							</p>
 

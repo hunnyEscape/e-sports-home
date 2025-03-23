@@ -4,13 +4,13 @@ import Image from 'next/image';
 import { HeroSectionProps } from '@/types';
 
 export default function HeroSection({
-	title = "笑って、遊んで、ちょっと若返る。",
+	title = `笑って、遊んで、ちょっと若返る。`,
 	subtitle = "60歳からの新しい楽しみ、認知症予防、そして人との交流がここにあります。シニア向けeスポーツ体験スペースへようこそ。",
 	ctaText = "無料体験に申し込む",
 	ctaLink = "/cv",
 	secondaryCtaText = "もっと詳しく知る",
 	secondaryCtaLink = "#experience",
-	imageSrc = "/hero-image.jpg", // 実際の画像に変更してください
+	imageSrc = "/hero-image.png", // 実際の画像に変更してください
 	imageAlt = "シニアの方々がゲームを楽しむ様子"
 }: Partial<HeroSectionProps>) {
 	return (
@@ -18,12 +18,16 @@ export default function HeroSection({
 			<div className="container mx-auto px-4">
 				<div className="flex flex-col md:flex-row items-center">
 					<div className="md:w-1/2 md:pr-12">
-						<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-							{title.split('.')[0]}
-							<span className="block mt-2 text-primary">
-								{title.includes('.') ? title.split('.')[1] : ''}
+						<h1 className="leading-tight">
+							<span className="text-4xl md:text-7xl font-bold text-gray-800">
+								笑って、遊んで、
+							</span>
+							<br />
+							<span className="text-3xl md:text-5xl font-bold text-primary">
+								ちょっと若返る。
 							</span>
 						</h1>
+
 
 						<p className="mt-6 text-xl md:text-2xl text-gray-700 leading-relaxed">
 							{subtitle}
@@ -57,21 +61,19 @@ export default function HeroSection({
 							{/* 仮の画像プレースホルダー - 実際の画像に置き換えてください */}
 							<div className="w-full h-[400px] bg-gray-200 relative">
 								<div className="absolute inset-0 flex items-center justify-center text-gray-400">
-									{/* 画像がある場合はこちらを使用 */}
-									{/* <Image 
-                    src={imageSrc} 
-                    alt={imageAlt} 
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  /> */}
-									<p>ヒーロー画像がここに表示されます</p>
+									<Image
+										src={imageSrc}
+										alt={imageAlt}
+										fill
+										style={{ objectFit: 'cover' }}
+										sizes="(max-width: 768px) 100vw, 50vw"
+									/>
 								</div>
 							</div>
 
 							<div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
 								<p className="text-lg font-medium">ゲームが初めての方も大丈夫。スタッフがやさしくサポートします</p>
-								<p className="text-sm">参加者の平均年齢は65歳。みなさん初めは初心者でした</p>
+								<p className="text-sm">参加者は60歳以上。みなさん初めは初心者でした</p>
 							</div>
 						</div>
 
