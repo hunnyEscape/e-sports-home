@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 		const { name, email, participants, message, preferredDate } = data;
 
 		// 管理者宛メールの送信
-		const adminEmailData = await resend.emails.send({
+		const adminEmailResponse = await resend.emails.send({
 			from: 'シニアeスポーツ体験 <info@esports-sakura.jp>', // 認証済みドメインのアドレス
 			to: 'info@marugoto-works.com', // 管理者のメールアドレス
 			subject: '【シニアeスポーツ体験】無料体験のお申し込み',
@@ -23,11 +23,11 @@ export async function POST(request: Request) {
         ${preferredDate ? `<p><strong>希望日時:</strong> ${preferredDate}</p>` : ''}
         ${message ? `<p><strong>メッセージ:</strong> ${message}</p>` : ''}
       `,
-			reply_to: email,
+			replyTo: email,
 		});
 
 		// 申込者宛自動返信メールの送信
-		const userEmailData = await resend.emails.send({
+		const userEmailResponse = await resend.emails.send({
 			from: 'シニアeスポーツ体験 <info@esports-sakura.jp>', // 認証済みドメインのアドレス
 			to: email,
 			subject: '【シニアeスポーツ体験】お申し込みありがとうございます',
@@ -48,8 +48,8 @@ export async function POST(request: Request) {
 
 		return NextResponse.json({
 			success: true,
-			adminEmailId: adminEmailData.id,
-			userEmailId: userEmailData.id
+			adminEmailId: adminEmailResponse.data?.id || 'sent',
+			userEmailId: userEmailResponse.data?.id || 'sent'
 		});
 	} catch (error) {
 		console.error('メール送信エラー:', error);
