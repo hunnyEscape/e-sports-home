@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 export default function HopeSection() {
-	const imageSrc = "/CVHeroSection.png";
+	const imageSrc = "/HopeSection.png";
 	const imageAlt = "シニアの方々がゲームを楽しむ様子";
 	return (
 		<section className="py-16 bg-gradient-to-br from-background to-white">
@@ -19,7 +19,6 @@ export default function HopeSection() {
 						そこから毎日が変わる。
 					</h2>
 				</div>
-
 				<div className="md:flex items-center md:space-x-8">
 					<div className="md:w-1/2 mb-8 md:mb-0">
 						<div className="bg-white rounded-xl overflow-hidden shadow-lg">
@@ -86,7 +85,7 @@ export default function HopeSection() {
 
 						<div className="mt-6 text-center">
 							<p className="text-xl font-bold text-gray-800">
-								ゲームって子どもだけのものだと思ってた。<br />でも実際は、健康のきっかけ、人と笑い合える場所だったんです。
+								ゲームって子どもだけのものだと思ってた。<br/>でも実際は、健康のきっかけ、人と笑い合える場所だったんです。
 							</p>
 						</div>
 

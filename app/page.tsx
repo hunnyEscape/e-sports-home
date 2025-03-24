@@ -8,8 +8,10 @@ import EsportsExplained from '@/components/EsportsExplained';
 import VenueAtmosphere from '@/components/VenueAtmosphere';
 import Testimonials from '@/components/Testimonials';
 import ExpertRecommendation from '@/components/ExpertRecommendation';
+import ExpertRecommendation2 from '@/components/ExpertRecommendation2';
 import PricingInfo from '@/components/PricingInfo';
 import ContactCTA from '@/components/ContactCTA';
+import CampaignCTA from '@/components/CampaignCTA';
 import FadeInSection from '@/components/FadeInSection';
 
 
@@ -50,9 +52,6 @@ export default function Home() {
 				<HopeSection />
 			</FadeInSection>
 
-			<FadeInSection>
-				<ResultsSection />
-			</FadeInSection>
 
 			{/*<FadeInSection>
         <Testimonials />
@@ -62,12 +61,15 @@ export default function Home() {
 				<ExpertRecommendation />
 			</FadeInSection>
 
-			{/*<FadeInSection>
-        <PricingInfo />
-      </FadeInSection>*/}
+
+			{/*
+			<FadeInSection>
+				<PricingInfo />
+			</FadeInSection>
+			*/}
 
 			<FadeInSection>
-				<ContactCTA />
+				<CampaignCTA />
 			</FadeInSection>
 
 			<Footer />

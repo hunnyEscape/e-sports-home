@@ -49,6 +49,7 @@ export interface ContactFormInput {
 	email: string;
 	preferredDate?: string;
 	message?: string;
+	participants: string;
 }
 
 // コンポーネントのProps型も追加しておきます

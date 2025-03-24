@@ -66,16 +66,11 @@ export default function PricingInfo() {
 							<div className="bg-primary py-4">
 								<h3 className="text-2xl font-bold text-white text-center">料金（税込）</h3>
 							</div>
-
 							<div className="p-6">
 								<div className="mb-6">
 									<h4 className="text-xl font-bold text-gray-800 mb-3">基本料金</h4>
 									<p className="text-2xl font-bold text-primary">1時間 1,200円</p>
-									<p className="text-lg text-gray-700 mt-2">
-										※ドリンク1杯付き（コーヒー、紅茶、緑茶）
-									</p>
 								</div>
-
 								<div className="mb-6">
 									<h4 className="text-xl font-bold text-gray-800 mb-3">お得なグループ割引</h4>
 									<div className="space-y-2">

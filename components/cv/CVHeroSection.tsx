@@ -5,6 +5,8 @@ import Image from 'next/image';
 export default function CVHeroSection() {
 	const imageSrc = "/CVHeroSection.png";
 	const imageAlt = "シニアの方々がゲームを楽しむ様子";
+	const secondaryCtaText = 'もっと詳しく';
+	const secondaryCtaLink = "#experience2";
 	return (
 		<section className="pt-24 md:pt-32 pb-16 bg-gradient-to-br from-white via-background to-background-light">
 			<div className="container mx-auto px-4">
@@ -48,14 +50,23 @@ export default function CVHeroSection() {
 							>
 								無料体験に申し込む（3分で完了）
 							</a>
-
-							<Link
+							{/*
+														<Link
 								href="https://lin.ee/yourlineid"
 								target="_blank"
 								className="block w-full md:w-auto text-center bg-white text-primary border-2 border-primary py-4 px-8 rounded-full text-xl font-medium hover:bg-primary hover:text-white transition-all"
 							>
 								LINEで質問する
-							</Link>
+							</Link>							
+							*/}
+							{secondaryCtaText && (
+								<Link
+									href={secondaryCtaLink}
+									className="block w-full md:w-auto text-center bg-white text-primary border-2 border-primary py-4 px-8 rounded-full text-xl font-medium hover:bg-primary hover:text-white transition-all"
+								>
+									{secondaryCtaText}
+								</Link>
+							)}
 						</div>
 					</div>
 
