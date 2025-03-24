@@ -11,7 +11,8 @@ export default function ContactForm() {
 		email: '',
 		phone: '',
 		preferredDate: '',
-		message: ''
+		message: '',
+		participants:'1',
 	});
 
 	const [formErrors, setFormErrors] = useState<Partial<ContactFormInput>>({});
@@ -66,7 +67,7 @@ export default function ContactForm() {
 		try {
 			await new Promise(resolve => setTimeout(resolve, 1500)); // 送信遅延をシミュレート
 			setSubmitSuccess(true);
-			setFormData({ name: '', email: '', phone: '', preferredDate: '', message: '' });
+			setFormData({ name: '', email: '', phone: '', preferredDate: '', message: '' ,participants:'1'});
 		} catch (error) {
 			console.error('送信エラー:', error);
 			alert('送信中にエラーが発生しました。時間をおいて再度お試しください。');

@@ -52,16 +52,12 @@ export default function Home() {
 				<HopeSection />
 			</FadeInSection>
 
-
 			{/*<FadeInSection>
         <Testimonials />
       </FadeInSection>*/}
-
 			<FadeInSection>
 				<ExpertRecommendation />
 			</FadeInSection>
-
-
 			{/*
 			<FadeInSection>
 				<PricingInfo />

@@ -1,31 +1,66 @@
 .
 ├── README.md
 ├── app
-│   ├── favicon.ico
+│   ├── cv
+│   │   └── page.tsx
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components
+│   ├── CampaignCTA.tsx
+│   ├── ContactCTA.tsx
+│   ├── EsportsExplained.tsx
+│   ├── ExperienceSection.tsx
+│   ├── ExpertRecommendation.tsx
+│   ├── ExpertRecommendation2.tsx
+│   ├── FadeInSection.tsx
 │   ├── Footer.tsx
 │   ├── Header.tsx
-│   └── HeroSection.tsx
+│   ├── HeroSection.tsx
+│   ├── PricingInfo.tsx
+│   ├── ReferenceModal.tsx
+│   ├── SmoothScroll.tsx
+│   ├── StoreAtmosphere.tsx
+│   ├── Testimonials.tsx
+│   ├── VenueAtmosphere.tsx
+│   └── cv
+│       ├── AchievementsSection.tsx
+│       ├── CVHeroSection.tsx
+│       ├── CVTestimonialsSection.tsx
+│       ├── ContactForm.tsx
+│       ├── EmpathySection.tsx
+│       ├── HopeSection.tsx
+│       └── ResultsSection.tsx
 ├── eslint.config.mjs
 ├── next-env.d.ts
 ├── next.config.js
 ├── package-lock.json
 ├── package.json
-├── postcss.config.mjs
+├── postcss.config.js
 ├── project_files.md
 ├── project_structure.txt
 ├── public
+│   ├── CVHeroSection.png
+│   ├── EsportsExplained.png
+│   ├── ExperienceSection.png
+│   ├── HopeSection.png
+│   ├── Instructor.png
+│   ├── VenueAtmosphere.png
+│   ├── brain-character.png
+│   ├── expert-1.png
+│   ├── expert-2.png
+│   ├── favicon.ico
 │   ├── file.svg
 │   ├── globe.svg
+│   ├── hero-image.png
+│   ├── meeting-point.jpg
 │   ├── next.svg
+│   ├── vene-map.png
 │   ├── vercel.svg
 │   └── window.svg
-├── tailwind.config.ts
+├── tailwind.config.js
 ├── tsconfig.json
 └── types
     └── index.ts
 
-4 directories, 24 files
+6 directories, 57 files

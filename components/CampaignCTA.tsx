@@ -274,7 +274,7 @@ export default function CampaignCTA() {
 							</div>
 						</div>
 					</div>
-					<div className="mt-16">
+					<div className="mt-16" id="access">
 						<h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
 							集合場所・会場の情報
 						</h3>
@@ -362,7 +362,7 @@ export default function CampaignCTA() {
 						</p>
 
 						<Link
-							href="/cv"
+							href="#contact"
 							className="inline-block bg-secondary text-gray-800 py-4 px-10 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
 						>
 							無料体験に申し込む

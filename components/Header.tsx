@@ -9,10 +9,10 @@ import { NavItem } from '@/types';
 const navItems: NavItem[] = [
 	{ label: 'ホーム', href: '/' },
 	{ label: '体験内容', href: '#experience' },
-	{ label: '料金・時間', href: '#pricing' },
-	{ label: 'よくある質問', href: '#faq' },
+	//{ label: '料金・時間', href: '#pricing' },
+	//{ label: 'よくある質問', href: '#faq' },
 	{ label: 'お問い合わせ', href: '#contact' },
-	{ label: '無料体験予約', href: '/cv', isButton: true },
+	{ label: '無料体験予約', href: '#contact', isButton: true },
 ];
 
 export default function Header() {

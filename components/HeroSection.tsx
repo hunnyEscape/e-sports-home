@@ -7,7 +7,7 @@ export default function HeroSection({
 	title = `笑って、遊んで、ちょっと若返る。`,
 	subtitle = "60歳からの新しい楽しみ、認知症予防、そして人との交流がここにあります。シニア向けeスポーツ体験スペースへようこそ。",
 	ctaText = "無料体験に申し込む",
-	ctaLink = "/cv",
+	ctaLink = "#contact",
 	secondaryCtaText = "もっと詳しく知る",
 	secondaryCtaLink = "#experience",
 	imageSrc = "/hero-image.png", // 実際の画像に変更してください

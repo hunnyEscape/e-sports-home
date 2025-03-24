@@ -45,7 +45,7 @@ export default function CVHeroSection() {
 
 						<div className="mt-8 space-y-4 md:space-y-0 md:space-x-4 md:flex">
 							<a
-								href="#contact-form"
+								href="#contact"
 								className="block w-full md:w-auto text-center bg-secondary text-gray-800 py-4 px-8 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
 							>
 								無料体験に申し込む（3分で完了）
