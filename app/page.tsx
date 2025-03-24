@@ -13,8 +13,6 @@ import PricingInfo from '@/components/PricingInfo';
 import ContactCTA from '@/components/ContactCTA';
 import CampaignCTA from '@/components/CampaignCTA';
 import FadeInSection from '@/components/FadeInSection';
-
-
 import CVHeroSection from '@/components/cv/CVHeroSection';
 import EmpathySection from '@/components/cv/EmpathySection';
 import HopeSection from '@/components/cv/HopeSection';
@@ -24,10 +22,8 @@ import { Simonetta } from 'next/font/google';
 export default function Home() {
 	return (
 		<main className="min-h-screen">
-			<Header />
-
-			<HeroSection />
-
+			<Header/>
+			<HeroSection/>
 			<FadeInSection>
 				<ExperienceSection />
 			</FadeInSection>
@@ -58,11 +54,13 @@ export default function Home() {
 			<FadeInSection>
 				<ExpertRecommendation />
 			</FadeInSection>
+			
 			{/*
 			<FadeInSection>
 				<PricingInfo />
 			</FadeInSection>
 			*/}
+			
 
 			<FadeInSection>
 				<CampaignCTA />

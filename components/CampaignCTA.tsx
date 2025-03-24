@@ -9,7 +9,6 @@ import { ContactFormInput } from '@/types';
 //   email: string;
 //   message?: string;
 //   participants: string;
-//   preferredDate?: string;
 // }
 
 export default function CampaignCTA() {
@@ -49,6 +48,7 @@ export default function CampaignCTA() {
 		}));
 	};
 
+	// components/CampaignCTA.tsx の handleSubmit 関数を修正
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 
@@ -56,14 +56,30 @@ export default function CampaignCTA() {
 
 		setIsSubmitting(true);
 
-		// ここに実際のフォーム送信処理を追加
-		// 仮の非同期処理（本番では実際のAPIエンドポイントにPOSTする）
 		try {
-			await new Promise(resolve => setTimeout(resolve, 1000));
-			setSubmitSuccess(true);
-			setFormData({ name: '', email: '', message: '', participants: '1', preferredDate: '' });
+			// APIエンドポイントにフォームデータを送信
+			const response = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			});
+
+			const result = await response.json();
+
+			if (result.success) {
+				// 送信成功時の処理
+				setSubmitSuccess(true);
+				setFormData({ name: '', email: '', message: '', participants: '1', preferredDate: '' });
+			} else {
+				// エラー時の処理
+				console.error('送信エラー:', result.error);
+				alert('送信に失敗しました。時間をおいて再度お試しください。');
+			}
 		} catch (error) {
 			console.error('送信エラー:', error);
+			alert('送信中にエラーが発生しました。時間をおいて再度お試しください。');
 		} finally {
 			setIsSubmitting(false);
 		}

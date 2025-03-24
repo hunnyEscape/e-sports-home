@@ -56,31 +56,29 @@ export default function HeroSection({
 						</p>
 					</div>
 
-					<div className="mt-12 md:mt-0 md:w-1/2 relative">
+					<div className="mt-12 md:mt-0 w-full md:w-1/2 relative">
 						<div className="relative rounded-xl overflow-hidden shadow-xl">
-							{/* 仮の画像プレースホルダー - 実際の画像に置き換えてください */}
-							<div className="w-full h-[400px] bg-gray-200 relative">
-								<div className="absolute inset-0 flex items-center justify-center text-gray-400">
-									<Image
-										src={imageSrc}
-										alt={imageAlt}
-										fill
-										style={{ objectFit: 'cover' }}
-										sizes="(max-width: 768px) 100vw, 50vw"
-									/>
-								</div>
+							<div className="w-full min-h-[300px] md:h-[400px] bg-gray-200 relative">
+								<Image
+									src={imageSrc}
+									alt={imageAlt}
+									fill
+									style={{ objectFit: 'cover' }}
+									sizes="(max-width: 768px) 100vw, 50vw"
+								/>
 							</div>
-
 							<div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
 								<p className="text-lg font-medium">ゲームが初めての方も大丈夫。スタッフがやさしくサポートします</p>
 								<p className="text-sm">参加者は60歳以上。みなさん初めは初心者でした</p>
 							</div>
 						</div>
 
-						<div className="absolute -bottom-6 -right-6 bg-accent rounded-full p-4 shadow-lg transform rotate-6">
+						{/* ここを absolute → fixed ではなく relative配置に変える方法もあり */}
+						<div className="absolute md:-bottom-6 md:-right-6 bg-accent rounded-full p-4 shadow-lg transform rotate-6">
 							<p className="text-xl font-bold text-gray-800">初心者でも<br />分かる！</p>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>

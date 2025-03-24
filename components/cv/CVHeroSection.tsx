@@ -70,9 +70,9 @@ export default function CVHeroSection() {
 						</div>
 					</div>
 
-					<div className="mt-12 md:mt-0 md:w-1/2 relative">
+					<div className="mt-12 md:mt-0 w-full md:w-1/2 relative">
 						<div className="relative rounded-xl overflow-hidden shadow-xl">
-							<div className="w-full h-[400px] bg-gray-200 relative">
+							<div className="w-full min-h-[300px] md:h-[400px] bg-gray-200 relative">
 								<Image
 									src={imageSrc}
 									alt={imageAlt}

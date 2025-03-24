@@ -8,7 +8,7 @@ export default function ExperienceSection() {
 		<section id="experience" className="py-16 bg-white">
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-12">
-					<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
+					<h2 className="text-2xl md:text-4xl font-bold text-gray-800 relative inline-block">
 						無料体験会って<span className="text-primary">何するの？</span>
 						<div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-70 transform -translate-y-2"></div>
 					</h2>
@@ -23,7 +23,7 @@ export default function ExperienceSection() {
 								1
 							</div>
 						</div>
-						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">シンプルなゲーム体験</h3>
+						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">シンプルなゲームを体験</h3>
 						<p className="text-lg text-gray-700">
 							簡単操作。初めてでも笑顔になれるゲームをご用意しています。
 						</p>
@@ -60,13 +60,13 @@ export default function ExperienceSection() {
 						</div>
 						<h3 className="text-2xl font-bold text-center text-gray-800 mb-3">交流タイム（希望者）</h3>
 						<p className="text-lg text-gray-700">
-							ゲームを遊んだ仲間と情報を交換しましょう！見学だけでもOKです。
+							遊んだ仲間と情報を交換しましょう！見学だけでもOKです。
 						</p>
 					</div>
 				</div>
 
 				<div className="mt-16 relative">
-					<div className="bg-background-light rounded-xl p-8 md:p-12">
+					<div className="bg-background-light rounded-xl p-4 md:p-12">
 						<div className="md:flex items-center">
 							<div className="md:w-1/2 md:pr-8">
 								{/*	<h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
