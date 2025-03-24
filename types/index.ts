@@ -7,7 +7,6 @@ export interface NavItem {
 	isButton?: boolean;
 }
 
-// 体験者の声の型
 export interface Testimonial {
 	id: string;
 	name: string;
