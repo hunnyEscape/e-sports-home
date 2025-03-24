@@ -92,7 +92,7 @@ export default function Footer() {
 					</div>
 
 					<p className="mt-6 text-lg">
-						&copy; {new Date().getFullYear()} シニアeスポーツ体験スペース All Rights Reserved.
+						&copy; {new Date().getFullYear()} eスポーツさくら 立川 All Rights Reserved.
 					</p>
 				</div>
 			</div>
