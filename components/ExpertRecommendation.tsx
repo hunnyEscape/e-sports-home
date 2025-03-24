@@ -41,7 +41,7 @@ export default function ExpertRecommendation() {
 						</div>
 						<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
 							<span className="hidden md:inline">楽しい<span className="text-primary">「脳活」</span>で健康寿命を延ばす</span>
-							<span className="md:hideen">楽しい<span className="text-primary">「脳活」</span>で<br/>健康寿命を延ばす</span>
+							<span className="md:hidden">楽しい<span className="text-primary">「脳活」</span>で<br/>健康寿命を延ばす</span>
 							<div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-70 transform -translate-y-2"></div>
 						</h2>
 						<p className="mt-4 text-xl text-gray-700 max-w-3xl mx-auto">

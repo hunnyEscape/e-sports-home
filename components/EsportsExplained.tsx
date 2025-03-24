@@ -9,8 +9,7 @@ export default function EsportsExplained() {
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-12">
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
-						<span className="text-secondary">"e"</span>スポーツって何？
-						<div className="absolute bottom-0 left-0 right-0 h-1 bg-primary opacity-70 transform -translate-y-2"></div>
+						<span className="text-primary">eスポーツ</span>って何？
 					</h2>
 					<p className="mt-4 text-xl text-gray-700">ゲームで楽しく脳トレ！ シニアの健康をサポート</p>
 				</div>
