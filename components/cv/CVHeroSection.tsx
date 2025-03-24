@@ -22,10 +22,10 @@ export default function CVHeroSection() {
 							シニア世代の新しい楽しみ、認知症予防、そして人との交流がここにあります。
 						</p>
 						*/}
-						<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-							<span className="text-primary">60代から始めるeスポーツ</span>が、<br />
-							毎日を変えてくれます。
+						<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+							<span className="text-primary">60代から始めるeスポーツ</span>が、<br/>毎日を変えてくれます。
 						</h1>
+
 						<p className="mt-6 text-xl md:text-2xl text-gray-700 leading-relaxed">
 							「私にゲームなんて…」と思っていた方々でも、笑顔で楽しめます。
 							シニア世代の新しい楽しみ、認知症予防、そして人との交流がここにあります。
@@ -46,7 +46,7 @@ export default function CVHeroSection() {
 						<div className="mt-8 space-y-4 md:space-y-0 md:space-x-4 md:flex">
 							<a
 								href="#contact"
-								className="block w-full md:w-auto text-center bg-secondary text-gray-800 py-4 px-8 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
+								className="block w-full md:w-auto text-center bg-secondary text-gray-800 py-4 px-8 rounded-full text-l md:text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
 							>
 								無料体験に申し込む（3分で完了）
 							</a>

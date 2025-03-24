@@ -11,7 +11,7 @@ export default function EmpathySection() {
 					</h2>
 				</div>
 
-				<div className="bg-background rounded-xl p-8 shadow-md">
+				<div className="bg-background rounded-xl p-4 md:p-8 shadow-md">
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 						<div className="flex items-start">
 							<div className="flex-shrink-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
@@ -96,7 +96,7 @@ export default function EmpathySection() {
 							そう感じるのは、あなただけではありません
 						</p>
 						<p className="mt-4 text-xl text-gray-700">
-							来られる方の多くが、はじめは『ゲームなんて...』と、<br/>
+							来られる方の多くが、はじめは『ゲームなんて...』と、
 							でもそれが毎週の楽しみになります
 						</p>
 					</div>

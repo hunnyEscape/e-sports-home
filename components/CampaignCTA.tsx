@@ -89,7 +89,7 @@ export default function CampaignCTA() {
 		<section id="contact" className="py-16 bg-white">
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-12">
-					<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
+					<h2 className="text-2xl md:text-4xl font-bold text-gray-800 relative inline-block">
 						まずは<span className="text-primary">体験</span>してみませんか？
 						<div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-70 transform -translate-y-2"></div>
 					</h2>
@@ -101,7 +101,7 @@ export default function CampaignCTA() {
 				<div className="max-w-5xl mx-auto">
 					<div className="bg-background-light rounded-xl overflow-hidden shadow-lg">
 						<div className="md:flex">
-							<div className="md:w-1/2 p-8">
+							<div className="md:w-1/2 p-4 md:p-8">
 								<h3 className="text-2xl font-bold text-gray-800 mb-1">
 									無料体験会のご予約
 								</h3>
@@ -289,6 +289,46 @@ export default function CampaignCTA() {
 								)}
 							</div>
 						</div>
+					</div>
+					<div className="mt-12 bg-white rounded-xl p-6 shadow-lg">
+						<h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+							その他のご予約方法
+						</h3>
+
+						<div className="flex flex-col md:flex-row justify-center items-center gap-6">
+							{/* 電話での問い合わせ */}
+							<a
+								href="tel:09083647759"
+								className="flex items-center justify-center bg-white text-primary border-2 border-primary py-3 px-6 rounded-full hover:bg-primary hover:text-white transition-all shadow-md w-full md:w-auto"
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+								</svg>
+								<div>
+									<span className="block font-bold">お電話でのご予約</span>
+									<span className="text-xl">090-8364-7759（受付：13時～17時）</span>
+								</div>
+							</a>
+							<a
+								href="https://lin.ee/ab1kBIO"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex items-center justify-center bg-white text-[#06C755] border-2 border-[#06C755] py-3 px-6 rounded-full hover:bg-[#06C755] hover:text-white transition-all shadow-md w-full md:w-auto"
+							>
+								<svg className="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+									<path d="M19.365 9.89c.50 0 .906.41.906.91s-.406.91-.906.91H17.59v1.683h1.775c.5 0 .906.41.906.91s-.406.91-.906.91H17.59v1.683h1.775c.5 0 .906.41.906.91s-.406.91-.906.91h-2.681a.91.91 0 01-.906-.91V10.8c0-.5.406-.91.906-.91h3.456zM13.64 14.088a.91.91 0 01.906.91v2.675a.91.91 0 01-.906.91.91.91 0 01-.906-.91v-1.766h-2.45v1.766a.91.91 0 01-.906.91.91.91 0 01-.906-.91v-2.675a.91.91 0 01.906-.91h4.262zm-7.265-4.198a.91.91 0 01.906.91v6.583a.91.91 0 01-.906.91.91.91 0 01-.906-.91v-6.583a.91.91 0 01.906-.91zm13.265-1.073C20.947 8.817 22 9.87 22 11.177v6.839c0 1.308-1.053 2.36-2.36 2.36H4.36C3.053 20.376 2 19.324 2 18.016v-6.839c0-1.308 1.053-2.36 2.36-2.36h15.94z" />
+								</svg>
+								<div>
+									<span className="block font-bold">公式LINEでのご予約</span>
+									<span className="text-xl">24時間受付・お気軽にどうぞ</span>
+								</div>
+							</a>
+						</div>
+
+						<p className="text-center text-gray-600 mt-6">
+							どちらの方法でもお気軽にお問い合わせください。<br />
+							体験のご予約やご質問に丁寧にお答えいたします。
+						</p>
 					</div>
 					<div className="mt-16" id="access">
 						<h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">

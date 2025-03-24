@@ -11,12 +11,16 @@ export default function VenueAtmosphere() {
 			<div className="container mx-auto px-4">
 				<div className="text-center mb-12">
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
-						快適で<span className="text-primary">清潔な会議室</span>をご用意しています。
+						<span className="md:hidden">
+							快適で<span className="text-primary">清潔な会議室</span>を<br/>ご用意しています。
+						</span>
+						<span className="hidden md:inline">
+							快適で<span className="text-primary">清潔な会議室</span>をご用意しています。
+						</span>
 						<div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-70 transform -translate-y-2"></div>
 					</h2>
 					<p className="mt-4 text-xl text-gray-700">安心して楽しめる、居心地の良い空間です</p>
 				</div>
-
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
 					<div className="rounded-xl overflow-hidden shadow-lg">
 						<div className="aspect-w-16 aspect-h-9 bg-gray-200">
@@ -31,7 +35,7 @@ export default function VenueAtmosphere() {
 					</div>
 
 					<div className="flex flex-col justify-center">
-						<h3 className="text-2xl font-bold text-gray-800 mb-4">
+						<h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-1 md:mb-4">
 							明るく清潔感のあるプレイエリア
 						</h3>
 						<p className="text-lg text-gray-700 mb-6">
@@ -41,7 +45,7 @@ export default function VenueAtmosphere() {
 					</div>
 				</div>
 
-				<div className="bg-background rounded-xl p-8 shadow-md">
+				<div className="bg-background rounded-xl p-4 md:p-8 shadow-md">
 					<div className="md:flex items-center">
 						<div className="md:w-2/3 md:pr-8">
 							<h3 className="text-2xl font-bold text-gray-800 mb-4">

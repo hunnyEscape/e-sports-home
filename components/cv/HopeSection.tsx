@@ -15,7 +15,7 @@ export default function HopeSection() {
 					</h2>
 					*/}
 					<h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-						ある日、試してみた<span className="text-primary">"eスポーツ"</span>。<br />
+						ある日、試してみた<br/><span className="text-primary">"eスポーツ"</span>。
 						そこから毎日が変わる。
 					</h2>
 				</div>
@@ -85,13 +85,13 @@ export default function HopeSection() {
 
 						<div className="mt-6 text-center">
 							<p className="text-xl font-bold text-gray-800">
-								ゲームって子どもだけのものだと思ってた。<br/>でも実際は、健康のきっかけ、人と笑い合える場所だったんです。
+								ゲームって子どもだけのものだと思ってた。でも実際は、健康のきっかけ、人と笑い合える場所だったんです。
 							</p>
 						</div>
 
 						<div className="mt-8 text-center">
 							<a
-								href="#contact-form"
+								href="#contact"
 								className="inline-block bg-secondary text-gray-800 py-3 px-8 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
 							>
 								私も体験してみる

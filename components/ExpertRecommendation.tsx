@@ -40,7 +40,8 @@ export default function ExpertRecommendation() {
 							科学的に実証された効果
 						</div>
 						<h2 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
-							毎日の<span className="text-primary">「脳活」</span>で健康寿命を延ばす
+							<span className="hidden md:inline">楽しい<span className="text-primary">「脳活」</span>で健康寿命を延ばす</span>
+							<span className="md:hideen">楽しい<span className="text-primary">「脳活」</span>で<br/>健康寿命を延ばす</span>
 							<div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary opacity-70 transform -translate-y-2"></div>
 						</h2>
 						<p className="mt-4 text-xl text-gray-700 max-w-3xl mx-auto">
@@ -83,7 +84,7 @@ export default function ExpertRecommendation() {
 						))}
 					</div>
 					*/}
-					<div className="bg-background-light rounded-xl p-8 shadow-md">
+					<div className="bg-background-light rounded-xl p-4 md:p-8 shadow-md">
 						<h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
 							研究で実証された効果
 						</h3>
@@ -158,7 +159,7 @@ export default function ExpertRecommendation() {
 					</div>
 
 
-					<div className="px-8 py-10 mt-5 bg-opacity-30">
+					<div className="px-4 md:px-8 py-10 mt-5 bg-opacity-30">
 						<div className="max-w-3xl mx-auto">
 							<div className="flex items-center justify-center mb-4">
 								<svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 mr-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -170,17 +171,23 @@ export default function ExpertRecommendation() {
 							</div>
 
 							<div className="relative mt-8 mb-0">
-								<div className="flex items-start">
+								{/* モバイルでは縦並び、md以上では横並び */}
+								<div className="flex flex-col items-center md:flex-row md:items-start">
 									{/* 脳みそキャラクター画像 */}
-									<div className="flex-shrink-0 w-28 h-28 md:w-36 md:h-36 -mt-6">
+									<div className="flex-shrink-0 w-32 h-32 md:w-36 md:h-36 mb-4 md:mb-0 md:-mt-6">
 										<img
 											src="/brain-character.png"
 											alt="脳みそキャラクター"
 											className="w-full h-full object-contain"
 										/>
 									</div>
-									<div className="flex-grow bg-white rounded-xl p-6 ml-3 shadow-md relative">
-										<div className="absolute left-0 top-8 w-4 h-4 bg-white transform rotate-45 -translate-x-2"></div>
+
+									{/* テキスト部分 */}
+									<div className="flex-grow bg-white rounded-xl p-6 shadow-md relative w-full">
+										{/* 吹き出しの矢印 - モバイルでは上部、デスクトップでは左側 */}
+										<div className="absolute md:hidden top-0 left-1/2 w-4 h-4 bg-white transform rotate-45 -translate-y-2 -translate-x-2"></div>
+										<div className="hidden md:block absolute left-0 top-8 w-4 h-4 bg-white transform rotate-45 -translate-x-2"></div>
+
 										<p className="text-lg leading-relaxed text-gray-700">
 											複数の脳の領域を同時に使うことで、脳の神経回路が活性化し、認知機能の維持・向上に役立ちます。
 											特に、<span className="font-bold">判断力・記憶力・反射神経などを同時に使う「デュアルタスク」</span>が効果的とされています！
@@ -221,7 +228,7 @@ export default function ExpertRecommendation() {
 					</div>
 
 
-					<div className="mt-0 bg-white rounded-xl p-8 shadow-lg text-center relative overflow-hidden">
+					<div className="mt-0 bg-white rounded-xl p-4 md:p-8 shadow-lg text-center relative overflow-hidden">
 						<div className="relative z-10 max-w-3xl mx-auto">
 							<div className="inline-block bg-secondary text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
 								POINT
@@ -233,9 +240,14 @@ export default function ExpertRecommendation() {
 								健康のために「楽しいから」続けられる。
 								それがeスポーツの最大の魅力です。
 							</p>
-							<div className="inline-block bg-primary text-white py-3 px-8 rounded-full font-bold text-lg shadow-md hover:bg-opacity-90 transition-colors cursor-pointer">
+							<div className="mt-8 text-center">
+							<a
+								href="#contact"
+								className="inline-block bg-secondary text-gray-800 py-3 px-8 rounded-full text-xl font-bold hover:bg-opacity-90 transition-all shadow-md"
+							>
 								まずは無料体験に参加する
-							</div>
+							</a>
+						</div>
 						</div>
 						{/* 装飾的な背景要素 */}
 						<div className="absolute top-0 right-0 w-32 h-32 bg-yellow-300 rounded-full opacity-10 -mr-10 -mt-10"></div>
